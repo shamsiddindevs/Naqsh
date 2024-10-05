@@ -10,7 +10,7 @@ import NoPage from "./pages/NoPage";
 function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<HomeLayout/>} >     
+      <Route path="/" element={<HomeLayout/>} >npm      
         <Route index element={<Portfolio/>}/>
         <Route path="team" element={<Team/>}/>
         <Route path="info" element={<Info/>}/>

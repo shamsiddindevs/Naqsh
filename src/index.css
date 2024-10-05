@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 .active{
-    color: rgb(20, 20, 20);
+    color: rgb(61, 61, 61);
+}
+@layer components{
+    .align-items{
+        @apply max-w-7xl mx-auto px-6;
+    }
 }

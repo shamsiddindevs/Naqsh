@@ -4,8 +4,8 @@ import logo from "../assets/img/logo.webp";
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-200 py-3">
-      <div className="navbar  sm:max-w-96 md:max-w-2xl lg:max-w-7xl mx-auto">
+    <div className="bg-slate-50 mb-10 py-3 sticky top-0 z-50  backdrop-blur-lg">
+      <div className="navbar  align-items">
         <NavLink
           to="/"
           className=" navbar-start">
