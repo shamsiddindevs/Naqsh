@@ -5,15 +5,17 @@ import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Info from "./pages/Info";
 import NoPage from "./pages/NoPage";
+import ImageInfo from "./pages/ImageInfo";
 
 
 function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<HomeLayout/>} >npm      
+      <Route path="/" element={<HomeLayout/>} >     
         <Route index element={<Portfolio/>}/>
         <Route path="team" element={<Team/>}/>
         <Route path="info" element={<Info/>}/>
+        <Route path="image" element={<ImageInfo/>}/>
         <Route path="*" element={<NoPage/>}/>
       </Route>
     )

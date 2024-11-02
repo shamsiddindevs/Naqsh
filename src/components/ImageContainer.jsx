@@ -11,7 +11,7 @@ const data =[
       address:"Tashkent, Uzbekistan",
       type:"Exterior",
       url:{
-          bg:gif1,
+          bg:'https://picsum.photos/250/300',
           parts:{
               part1:"../img1",
               part2:"../img2",
@@ -24,7 +24,7 @@ const data =[
       address:"Tashkent, Uzbekistan",
       type:"Exterior",
       url:{
-          bg:gif2,
+          bg:'https://picsum.photos/400/400',
           parts:{
               part1:"../img1",
               part2:"../img2",
@@ -38,7 +38,7 @@ const data =[
       address:"Tashkent, Uzbekistan",
       type:"Exterior",
       url:{
-          bg:gif3,
+          bg:'https://picsum.photos/200/400',
           parts:{
               part1:"../img1",
               part2:"../img2",
@@ -48,11 +48,10 @@ const data =[
       }
   },
   {
-      name:"APEX Tower",
-      address:"Tashkent, Uzbekistan",
+    title: "Durmen Villa", address: "Neo Classic Design",
       type:"Exterior",
       url:{
-          bg:gif3,
+          bg:'https://picsum.photos/400/300',
           parts:{
               part1:"../img1",
               part2:"../img2",
@@ -62,11 +61,10 @@ const data =[
       }
   },
   {
-      name:"APEX Tower",
-      address:"Tashkent, Uzbekistan",
+    title: "APEX Restaurant", address: "Modern Design",
       type:"Exterior",
       url:{
-          bg:gif1,
+          bg:'https://picsum.photos/300/300',
           parts:{
               part1:"../img1",
               part2:"../img2",
@@ -75,11 +73,10 @@ const data =[
           }
       }
   },{
-    name:"APEX Tower",
-    address:"Tashkent, Uzbekistan",
+    title: "APEX Bank", address: "Interior",
     type:"Exterior",
     url:{
-        bg:gif2,
+        bg:'https://picsum.photos/200/300',
         parts:{
             part1:"../img1",
             part2:"../img2",
@@ -94,7 +91,7 @@ const data =[
 const ImageContainer = () => {
   return (
     <>
-      <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+      <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 1, 900: 2}}>
         <Masonry gutter="25px">
 
           {data.map((v,i)=><Image img = {v} key={i}/>)}

@@ -3,7 +3,7 @@ import ImageContainer from '../components/ImageContainer'
 
 const Portfolio = () => {
   return (
-    <div className='align-items'>
+    <div className='align-items py-10'>
     <ImageContainer/>
     </div>
   )

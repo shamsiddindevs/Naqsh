@@ -4,17 +4,19 @@ import logo from "../assets/img/logo.webp";
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-50 mb-10 py-3 sticky top-0 z-50  backdrop-blur-lg">
+    <div className="bg-slate-50  py-3 sticky top-0 z-50  backdrop-blur-lg">
       <div className="navbar  align-items">
-        <NavLink
+        <div className=" navbar-start">
+          <NavLink
           to="/"
-          className=" navbar-start">
+          >
           <img
             src={logo}
             alt="logo"
             className="w-12"
           />
         </NavLink>
+        </div>
         <ul className=" hidden navbar-end md:flex gap-5 font-semibold text-xl active:text-gray-950  ">
           <li className="text-gray-400 hover:text-gray-800 transition-all">
             <NavLink to="/">Portfolio</NavLink>
